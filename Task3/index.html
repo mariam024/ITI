@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mariam Mohammed">
+    <meta name="keywords" content="HTML, front-end, web, portfolio">
+    <meta name="description" content="Personal portfolio website made with HTML only">
+    <meta name http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mariam</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#content">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="about">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Mariam Mohammed</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sequi quia quis vero
+                                obcaecati.<br> Dicta voluptas suscipit possimus obcaecati eaque saepe numquam delectus
+                                ullam
+                                repudiandae magnam. Eum blanditiis quae aperiam.</p>
+                            <p>My favourite website: <a href="https://www.w3schools.com/" target="_blank">WebSchool</a>
+                            </p>
+                            <p>Quote I like: <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                    est?</q></p>
+                        </td>
+                        <td><img src="./images/download (9).jfif" alt="Girl using laptop" width="400px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>UI/UX</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="content">
+            <h3>Contact Me</h3>
+            <form>
+                <fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Your information</legend>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><label for="name">Name:</label></td>
+                                    <td> <input type="text" name="name" id="name" aria-label="Your Name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">Email:</label></td>
+                                    <td> <input type="email" name="email" id="email" aria-label="Your Email"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="phoneNum">Phone Number:</label></td>
+                                    <td> <input type="number" name="phoneNum" id="phoneNum"
+                                            aria-label="Your Phone Number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="message">Message:</label></td>
+                                    <td><textarea name="message" id="message" placeholder="Send Your message"
+                                            aria-label="Send Your message"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Choose your preferred method of contact:</legend>
+                        <input type="radio" id="email2" name="contact" value="contact" aria-label="Email">
+                        <label for="email2">Email</label>
+                        <br>
+                        <input type="radio" id="whatsApp" name="contact" value="contact" aria-label="WhatsApp">
+                        <label for="whatsApp">WhatsApp</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Select the types of messages you'd like to receive:</legend>
+                        <input type="checkbox" id="notifications" name="notifications"
+                            aria-label="Event or workshop notifications">
+                        <label for="notifications">Event or workshop notifications</label>
+                        <br>
+                        <input type="checkbox" id="updates" name="updates" aria-label="Project updates">
+                        <label for="updates">Project updates</label>
+                        <br>
+                        <input type="checkbox" id="news" name="news" aria-label="Offers and news">
+                        <label for="news">Offers and news</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>How did you find me?</legend>
+                        <select name="find me" id="findMe" aria-label="How did you find me?">
+                            <option value="Google Search">Google Search</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="GitHub">GitHub</option>
+                            <option value="Friend Recommendation">Friend Recommendation</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <button type="submit" aria-label="submit">Submit</button>
+                    <br><br>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>©2025 Mariam Mohammed. All rights reserved.</p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
