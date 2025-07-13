@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  background-image: url("../images/Download Animated looping modern gradient background for free.jfif");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.707);
+}
+
+.home {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.197);
+}
+.home p {
+  font-size: 18px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.197);
+  width: 350px;
+  min-height: 360px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.register input,
+select,
+textarea {
+  width: 300px;
+  height: 30px;
+  color: gray;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.register button {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: gray;
+  cursor: pointer;
+}
+.register button:hover {
+  background-color: rgba(255, 255, 255, 0.629);
+}
