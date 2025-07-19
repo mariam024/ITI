@@ -100,40 +100,46 @@
   background-color: transparent;
   border: 2px solid var(--second-color);
 }
+
 .about {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  height: 100vh;
-  gap: 20px;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
 }
+
 .image img {
   width: 100%;
   max-width: 500px;
   height: auto;
+  display: block;
 }
+
 .content {
-  width: 50%;
+  max-width: 500px;
   padding: 20px;
 }
+
 .content h3 {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 400;
   color: var(--h-color);
 }
+
 .content p {
   margin: 20px 0;
   color: var(--p-color);
-  width: 100%;
-  max-width: 400px;
   font-size: 16px;
 }
+
 .content i {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   color: var(--icon-color);
   border: 1px solid var(--main-color);
   border-radius: 50%;

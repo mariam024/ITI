@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-  .about {
+  /* .about {
     flex-direction: column;
     text-align: center;
   }
@@ -12,6 +12,19 @@
   }
   .content p {
     max-width: 100%;
+  } */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
