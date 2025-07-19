@@ -14,10 +14,6 @@
   --h-color: #303030;
   --p-color: #686868;
 }
-.main {
-  display: flex;
-  flex-flow: column wrap;
-}
 .container {
   min-height: 100vh;
   background-image: url("../images/drew-coffman-1872.jpg");
@@ -106,20 +102,22 @@
 }
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
   margin: 0 auto;
+  height: 100vh;
   gap: 20px;
   padding: 20px;
 }
 .image img {
-  /* width: 100%; */
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 .content {
-  /* width: 50%; */
-  padding: 40px;
+  width: 50%;
+  padding: 20px;
 }
 .content h3 {
   margin-bottom: 20px;
@@ -130,7 +128,8 @@
 .content p {
   margin: 20px 0;
   color: var(--p-color);
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   font-size: 16px;
 }
 .content i {
@@ -140,9 +139,11 @@
   border-radius: 50%;
   padding: 10px;
 }
+
 .bakery {
   text-align: center;
   background-color: #e6e6e6c9;
+  padding: 30px 15px;
 }
 .bakery h3 {
   margin-bottom: 20px;
@@ -155,21 +156,23 @@
   color: var(--p-color);
 }
 .content1 {
-  margin: 30px;
+  margin: 30px auto;
 }
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .card {
-  width: 300px;
-  margin: 20px;
+  width: 30%;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 15px;
 }
 .card img {
   width: 100%;
-  margin: 10px;
 }
 .footer {
   background-color: var(--h-color);
@@ -188,172 +191,4 @@
   padding: 8px 10px;
   margin: 10px;
   font-size: 18px;
-}
-
-@media (max-width: 768px) {
-  .logo img {
-    width: 120px;
-  }
-
-  .nav a {
-    font-size: 16px;
-  }
-
-  .home h1 {
-    font-size: 40px;
-  }
-
-  .home p {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  .content h3 {
-    font-size: 24px;
-  }
-
-  .bakery h3 {
-    font-size: 20px;
-  }
-
-  .bakery p,
-  .content p {
-    font-size: 14px;
-  }
-
-  .footer p {
-    font-size: 13px;
-  }
-
-  .icons i {
-    font-size: 16px;
-    padding: 6px 8px;
-  }
-}
-
-@media (max-width: 640px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .logo img {
-    width: 100px;
-  }
-
-  .nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .home h1 {
-    font-size: 28px;
-  }
-
-  .home p {
-    font-size: 14px;
-  }
-
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .image img {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .content {
-    padding: 15px;
-  }
-
-  .content p {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .btn button {
-    font-size: 15px;
-    padding: 10px 12px;
-  }
-}
-@media (max-width: 480px) {
-  .logo img {
-    width: 90px;
-  }
-
-  .nav ul {
-    gap: 10px;
-  }
-
-  .nav a {
-    font-size: 14px;
-  }
-
-  .home h1 {
-    font-size: 24px;
-  }
-
-  .home p {
-    font-size: 13px;
-    padding: 5px;
-  }
-
-  .btn button {
-    font-size: 14px;
-    padding: 8px 10px;
-    margin: 5px;
-  }
-
-  .about {
-    padding: 10px;
-  }
-
-  .image img {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .content {
-    padding: 10px;
-  }
-
-  .content h3 {
-    font-size: 20px;
-  }
-
-  .content p {
-    font-size: 13px;
-  }
-
-  .card {
-    max-width: 100%;
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .footer p {
-    font-size: 11px;
-    padding: 10px;
-  }
-
-  .icons i {
-    font-size: 14px;
-    padding: 5px 6px;
-    margin: 6px;
-  }
 }
