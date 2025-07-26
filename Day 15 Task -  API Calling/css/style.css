@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF6E9 !important;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#card {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.696);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.436);
+    transition: transform .3s;
+    background-color: #FAF6E9;
+}
+
+#card:hover {
+    transform: scale(1.02);
+}
+
+#aBtn {
+    background-color: brown;
+    border: brown;
+}
+
+#aBtn:hover {
+    background-color: rgba(165, 42, 42, 0.87);
+}
+
+#card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+#searchInput,
+#userSelect {
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.541);
+    border: 1px solid rgba(128, 128, 128, 0.696);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#searchInput {
+    padding: 5px 100px;
+}
+
+#searchInput:focus,
+#userSelect:focus {
+    outline: none;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
